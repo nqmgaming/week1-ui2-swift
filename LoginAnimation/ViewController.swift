@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .background
-        
+
         setUpDisconnectImage()
         setUpButtonSignInAnimation()
         setUpImageLogin()
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         setUpPasswordLabel()
         setUpPasswordTextField()
         setUpSignInButtonMain()
-        
+
         signInContainer.alpha = 0
     }
 
@@ -218,6 +218,7 @@ class ViewController: UIViewController {
             signInButtonMain.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
             signInButtonMain.leadingAnchor.constraint(equalTo: signInContainer.leadingAnchor, constant: 20),
             signInButtonMain.trailingAnchor.constraint(equalTo: signInContainer.trailingAnchor, constant: -20),
+            signInButtonMain.bottomAnchor.constraint(equalTo: signInContainer.bottomAnchor, constant: -20),
             signInButtonMain.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
